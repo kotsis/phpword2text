@@ -1,0 +1,5 @@
+.vscode/
+vssver.scc
+/vendor/
+/resources
+composer.lock
