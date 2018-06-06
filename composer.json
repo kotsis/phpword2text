@@ -1,5 +1,8 @@
 {
+    "name": "kmak/phpword2text",
+    "description": "PHP Library for simply extracting text from Word documents. No formatting provided.",
     "require": {
+        "php": "^5.3.3 || ^7.0",
         "phpoffice/phpword": "^0.14.0"
     }
 }
