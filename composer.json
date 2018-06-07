@@ -5,5 +5,8 @@
     "require": {
         "php": "^5.3.3 || ^7.0",
         "phpoffice/phpword": "^0.14.0"
+    },
+    "autoload": {
+        "classmap": ["phpword2text.php"]
     }
 }
