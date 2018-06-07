@@ -1,7 +1,5 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
-
 class PHPWord2Text {
 
 	protected function getElementsText($elements, $finish_char=' '){
