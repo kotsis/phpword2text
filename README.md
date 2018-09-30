@@ -5,7 +5,7 @@ PHP Library for simply extracting text from Word documents. No formatting provid
 First you need to have composer installed.
 
 ```console
-foo@bar:~$ composer require kmak/phpword2text:dev-master
+foo@bar:~$ composer require kmak/phpword2text
 ```
 
 Then in your code you can do the following:
