@@ -8,6 +8,15 @@ class PHPWord2Text {
 			if(method_exists($el,'getText')){
 				$retText .= $el->getText().$finish_char;
 			}
+			elseif($el instanceof \PhpOffice\PhpWord\Element\Table){
+				$rows = $el->getRows();
+				foreach($rows as $r){
+					$cells = $r->getCells();
+					foreach($cells as $c){
+						$retText .= $this->getElementsText($c->getElements())." ";
+					}
+				}
+			}
 			else{
 				if(method_exists($el,'getElements')){
 					if(get_class($el) == 'PhpOffice\PhpWord\Element\TextRun'){
